@@ -22,7 +22,7 @@ export function MenuItem({ item, isActive }: Props) {
 					})}
 				/>
 				<span
-					className={cn({
+					className={cn('group-hover:text-primary', {
 						' text-primary': isActive
 					})}
 				>

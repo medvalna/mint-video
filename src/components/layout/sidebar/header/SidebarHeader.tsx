@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { COLORS } from '@/constants/colors.constants'
 
-import { PUBLIC_PAGE } from '@/config/public-page.config'
+import { PAGE } from '@/config/public-page.config'
 
 export function SidebarHeader({ toggleSidebar }: { toggleSidebar: () => void }) {
 	return (
@@ -15,7 +15,7 @@ export function SidebarHeader({ toggleSidebar }: { toggleSidebar: () => void }) 
 				<Menu />
 			</button>
 			<Link
-				href={PUBLIC_PAGE.HOME}
+				href={PAGE.HOME}
 				className='flex items-center gap-2'
 			>
 				<SquarePlay
